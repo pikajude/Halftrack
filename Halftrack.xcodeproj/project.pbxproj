@@ -18,6 +18,8 @@
 		8F8FD25218AB473C00B8BCA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8FD23118AB473C00B8BCA9 /* Cocoa.framework */; };
 		8F8FD25A18AB473C00B8BCA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD25818AB473C00B8BCA9 /* InfoPlist.strings */; };
 		8F8FD25C18AB473C00B8BCA9 /* HalftrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FD25B18AB473C00B8BCA9 /* HalftrackTests.m */; };
+		8FF7C77E18AC8557001AFC2B /* HTTrackRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7C77D18AC8557001AFC2B /* HTTrackRowView.m */; };
+		8FF7C78218AC85C2001AFC2B /* HTShipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7C78118AC85C2001AFC2B /* HTShipment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		8F8FD25718AB473C00B8BCA9 /* HalftrackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HalftrackTests-Info.plist"; sourceTree = "<group>"; };
 		8F8FD25918AB473C00B8BCA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F8FD25B18AB473C00B8BCA9 /* HalftrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalftrackTests.m; sourceTree = "<group>"; };
+		8FF7C77C18AC8557001AFC2B /* HTTrackRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTrackRowView.h; sourceTree = "<group>"; };
+		8FF7C77D18AC8557001AFC2B /* HTTrackRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTrackRowView.m; sourceTree = "<group>"; };
+		8FF7C78018AC85C2001AFC2B /* HTShipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTShipment.h; sourceTree = "<group>"; };
+		8FF7C78118AC85C2001AFC2B /* HTShipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTShipment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 		8F8FD23718AB473C00B8BCA9 /* Halftrack */ = {
 			isa = PBXGroup;
 			children = (
+				8FF7C77F18AC8578001AFC2B /* Models */,
+				8FF7C77B18AC8557001AFC2B /* Views */,
 				8F8FD24318AB473C00B8BCA9 /* HTAppDelegate.h */,
 				8F8FD24418AB473C00B8BCA9 /* HTAppDelegate.m */,
 				8F8FD24618AB473C00B8BCA9 /* MainMenu.xib */,
@@ -152,6 +160,24 @@
 				8F8FD25818AB473C00B8BCA9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FF7C77B18AC8557001AFC2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FF7C77C18AC8557001AFC2B /* HTTrackRowView.h */,
+				8FF7C77D18AC8557001AFC2B /* HTTrackRowView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8FF7C77F18AC8578001AFC2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FF7C78018AC85C2001AFC2B /* HTShipment.h */,
+				8FF7C78118AC85C2001AFC2B /* HTShipment.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +281,8 @@
 			files = (
 				8F8FD24518AB473C00B8BCA9 /* HTAppDelegate.m in Sources */,
 				8F8FD23E18AB473C00B8BCA9 /* main.m in Sources */,
+				8FF7C77E18AC8557001AFC2B /* HTTrackRowView.m in Sources */,
+				8FF7C78218AC85C2001AFC2B /* HTShipment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +493,7 @@
 				8F8FD26118AB473C00B8BCA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F8FD26218AB473C00B8BCA9 /* Build configuration list for PBXNativeTarget "HalftrackTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +502,7 @@
 				8F8FD26418AB473C00B8BCA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
