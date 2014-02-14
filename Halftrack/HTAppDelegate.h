@@ -9,13 +9,11 @@
 #import <Cocoa/Cocoa.h>
 #import "HTShipment.h"
 #import "HTTrackRowView.h"
+#import "HTTrackingController.h"
 
-@interface HTAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate, NSTableViewDataSource, NSWindowDelegate> {
-    NSMutableArray *shipments;
-    NSMutableDictionary *views;
-}
+@interface HTAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTableView *tv;
+@property (assign) IBOutlet HTTrackingController *trackCtrl;
 
 @end

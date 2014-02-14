@@ -31,6 +31,11 @@
     return MAX(MIN_ROW_HEIGHT, MIN(MAX_ROW_HEIGHT, width * 0.4f)) + 1;
 }
 
+- (BOOL)isFlipped
+{
+    return YES;
+}
+
 - (void)drawRect:(NSRect)_dirtyRect
 {
     NSRect bounds = self.bounds;
@@ -40,9 +45,9 @@
     [NSGraphicsContext saveGraphicsState];
     
     NSRect progressBar = NSMakeRect(MAX(1, bounds.origin.x + 5),
-                                    MAX(1, bounds.origin.y + 3),
+                                    MAX(1, bounds.origin.y + 5),
                                     MAX(1, bounds.size.width - 9),
-                                    MAX(1, bounds.size.height - 6));
+                                    MAX(1, bounds.size.height - 8));
     
     NSShadow *shad = [NSShadow new];
     [shad setShadowOffset:NSMakeSize(0.f, -1.5f)];
@@ -66,7 +71,7 @@
     
     NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"foo" attributes:dict];
     
-    [str drawAtPoint:bounds.origin];
+    [str drawAtPoint:progressBar.origin];
     
     [NSGraphicsContext restoreGraphicsState];
 }

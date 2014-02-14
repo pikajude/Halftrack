@@ -692,8 +692,8 @@
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
-                                        <outlet property="dataSource" destination="494" id="xme-Jw-Rgg"/>
-                                        <outlet property="delegate" destination="494" id="p5X-00-WvX"/>
+                                        <outlet property="dataSource" destination="xCA-8a-pHf" id="KXr-QW-SbU"/>
+                                        <outlet property="delegate" destination="xCA-8a-pHf" id="dC0-vt-v9D"/>
                                     </connections>
                                 </tableView>
                             </subviews>
@@ -716,10 +716,16 @@
         </window>
         <customObject id="494" customClass="HTAppDelegate">
             <connections>
+                <outlet property="trackCtrl" destination="xCA-8a-pHf" id="JUG-4l-3cB"/>
                 <outlet property="tv" destination="mRW-wt-l9E" id="pha-el-aEJ"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="xCA-8a-pHf" customClass="HTTrackingController">
+            <connections>
+                <outlet property="tv" destination="mRW-wt-l9E" id="pzr-bK-teQ"/>
+            </connections>
+        </customObject>
     </objects>
 </document>
