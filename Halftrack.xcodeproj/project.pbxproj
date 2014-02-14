@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F6E6C2718ADFC5000DC07F9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E6C2518ADFBB900DC07F9 /* Roboto-Regular.ttf */; };
 		8F6E6C2818ADFC7D00DC07F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD24618AB473C00B8BCA9 /* MainMenu.xib */; };
+		8F6E6C2C18AE697900DC07F9 /* HTTrackingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E6C2B18AE697900DC07F9 /* HTTrackingController.m */; };
 		8F8FD23218AB473C00B8BCA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8FD23118AB473C00B8BCA9 /* Cocoa.framework */; };
 		8F8FD23C18AB473C00B8BCA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD23A18AB473C00B8BCA9 /* InfoPlist.strings */; };
 		8F8FD23E18AB473C00B8BCA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FD23D18AB473C00B8BCA9 /* main.m */; };
@@ -35,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		8F6E6C2518ADFBB900DC07F9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		8F6E6C2A18AE697900DC07F9 /* HTTrackingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTrackingController.h; sourceTree = "<group>"; };
+		8F6E6C2B18AE697900DC07F9 /* HTTrackingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTrackingController.m; sourceTree = "<group>"; };
 		8F8FD22E18AB473C00B8BCA9 /* Halftrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halftrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8FD23118AB473C00B8BCA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8F8FD23418AB473C00B8BCA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -89,6 +92,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		8F6E6C2918AE696A00DC07F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F6E6C2A18AE697900DC07F9 /* HTTrackingController.h */,
+				8F6E6C2B18AE697900DC07F9 /* HTTrackingController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8F8FD22518AB473C00B8BCA9 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +143,7 @@
 		8F8FD23718AB473C00B8BCA9 /* Halftrack */ = {
 			isa = PBXGroup;
 			children = (
+				8F6E6C2918AE696A00DC07F9 /* Controllers */,
 				8F6E6C2418ADFBB900DC07F9 /* Fonts */,
 				8FF7C77F18AC8578001AFC2B /* Models */,
 				8FF7C77B18AC8557001AFC2B /* Views */,
@@ -295,6 +308,7 @@
 				8F8FD23E18AB473C00B8BCA9 /* main.m in Sources */,
 				8FF7C77E18AC8557001AFC2B /* HTTrackRowView.m in Sources */,
 				8FF7C78218AC85C2001AFC2B /* HTShipment.m in Sources */,
+				8F6E6C2C18AE697900DC07F9 /* HTTrackingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

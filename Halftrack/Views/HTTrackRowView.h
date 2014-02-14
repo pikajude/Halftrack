@@ -20,4 +20,6 @@
 
 + (CGFloat)rowHeightByWidth:(CGFloat)width;
 
++ (void)withPristineContext:(void (^)(void))blk;
+
 @end
