@@ -18,17 +18,24 @@
     [shipments addObject:[HTShipment new]];
     [shipments addObject:[HTShipment new]];
     [shipments addObject:[HTShipment new]];
+    views = [NSMutableDictionary dictionary];
     return self;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    
+    [self.tv setBackgroundColor:[NSColor colorWithDeviceWhite:0.9f alpha:1.f]];
 }
 
-- (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row
+- (void)windowWillClose:(NSNotification *)notification
 {
-    return 50.0f;
+    [NSApp terminate:nil];
+}
+
+- (void)windowDidResize:(NSNotification *)notification
+{
+    [self.tv setRowHeight:[HTTrackRowView rowHeightByWidth:self.tv.bounds.size.width]];
+    // [self.tv setRowHeight:MAX(MIN_ROW_HEIGHT, MIN(MAX_ROW_HEIGHT, self.tv.bounds.size.width * 0.2f - 40.0f)) + 1];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
@@ -38,7 +45,12 @@
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return [[HTTrackRowView alloc] initWithShipment:[shipments objectAtIndex:row]];
+    NSNumber *r = [NSNumber numberWithInteger:row];
+    if ([views objectForKey:r] == nil) {
+        HTTrackRowView *v = [[HTTrackRowView alloc] initWithShipment:[shipments objectAtIndex:row]];
+        [views setObject:v forKey:r];
+    }
+    return [views objectForKey:r];
 }
 
 @end

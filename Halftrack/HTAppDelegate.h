@@ -10,10 +10,12 @@
 #import "HTShipment.h"
 #import "HTTrackRowView.h"
 
-@interface HTAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate, NSTableViewDataSource> {
+@interface HTAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate, NSTableViewDataSource, NSWindowDelegate> {
     NSMutableArray *shipments;
+    NSMutableDictionary *views;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTableView *tv;
 
 @end

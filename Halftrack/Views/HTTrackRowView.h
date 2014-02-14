@@ -9,10 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "HTShipment.h"
 
+#define MIN_ROW_HEIGHT 70.0f
+#define MAX_ROW_HEIGHT 90.0f
+
 @interface HTTrackRowView : NSView {
     HTShipment *shipment;
 }
 
 - (id)initWithShipment:(HTShipment *)s;
+
++ (CGFloat)rowHeightByWidth:(CGFloat)width;
 
 @end

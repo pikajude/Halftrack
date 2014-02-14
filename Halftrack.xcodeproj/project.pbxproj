@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F6E6C2718ADFC5000DC07F9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E6C2518ADFBB900DC07F9 /* Roboto-Regular.ttf */; };
+		8F6E6C2818ADFC7D00DC07F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD24618AB473C00B8BCA9 /* MainMenu.xib */; };
 		8F8FD23218AB473C00B8BCA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8FD23118AB473C00B8BCA9 /* Cocoa.framework */; };
 		8F8FD23C18AB473C00B8BCA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD23A18AB473C00B8BCA9 /* InfoPlist.strings */; };
 		8F8FD23E18AB473C00B8BCA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FD23D18AB473C00B8BCA9 /* main.m */; };
 		8F8FD24218AB473C00B8BCA9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD24018AB473C00B8BCA9 /* Credits.rtf */; };
 		8F8FD24518AB473C00B8BCA9 /* HTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FD24418AB473C00B8BCA9 /* HTAppDelegate.m */; };
-		8F8FD24818AB473C00B8BCA9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD24618AB473C00B8BCA9 /* MainMenu.xib */; };
 		8F8FD24A18AB473C00B8BCA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FD24918AB473C00B8BCA9 /* Images.xcassets */; };
 		8F8FD25118AB473C00B8BCA9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8FD25018AB473C00B8BCA9 /* XCTest.framework */; };
 		8F8FD25218AB473C00B8BCA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8FD23118AB473C00B8BCA9 /* Cocoa.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F6E6C2518ADFBB900DC07F9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		8F8FD22E18AB473C00B8BCA9 /* Halftrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halftrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8FD23118AB473C00B8BCA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8F8FD23418AB473C00B8BCA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6E6C2418ADFBB900DC07F9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8F6E6C2518ADFBB900DC07F9 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		8F8FD22518AB473C00B8BCA9 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		8F8FD23718AB473C00B8BCA9 /* Halftrack */ = {
 			isa = PBXGroup;
 			children = (
+				8F6E6C2418ADFBB900DC07F9 /* Fonts */,
 				8FF7C77F18AC8578001AFC2B /* Models */,
 				8FF7C77B18AC8557001AFC2B /* Views */,
 				8F8FD24318AB473C00B8BCA9 /* HTAppDelegate.h */,
@@ -257,10 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6E6C2718ADFC5000DC07F9 /* Roboto-Regular.ttf in Resources */,
+				8F6E6C2818ADFC7D00DC07F9 /* MainMenu.xib in Resources */,
 				8F8FD23C18AB473C00B8BCA9 /* InfoPlist.strings in Resources */,
 				8F8FD24A18AB473C00B8BCA9 /* Images.xcassets in Resources */,
 				8F8FD24218AB473C00B8BCA9 /* Credits.rtf in Resources */,
-				8F8FD24818AB473C00B8BCA9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

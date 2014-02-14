@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8143B430-1568-4AAA-8BA7-523759AD677B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Halftrack</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9405D3C6-0023-4B3B-9C9D-D83D80904EDB</key>
+		<string>https://github.com/joelteon/Halftrack.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Halftrack.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9405D3C6-0023-4B3B-9C9D-D83D80904EDB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joelteon/Halftrack.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9405D3C6-0023-4B3B-9C9D-D83D80904EDB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9405D3C6-0023-4B3B-9C9D-D83D80904EDB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Halftrack</string>
+		</dict>
+	</array>
+</dict>
+</plist>

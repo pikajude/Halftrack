@@ -26,20 +26,49 @@
     return self;
 }
 
-- (void)drawRect:(NSRect)dirtyRect
++ (CGFloat)rowHeightByWidth:(CGFloat)width
 {
-	[super drawRect:dirtyRect];
+    return MAX(MIN_ROW_HEIGHT, MIN(MAX_ROW_HEIGHT, width * 0.4f)) + 1;
+}
+
+- (void)drawRect:(NSRect)_dirtyRect
+{
+    NSRect bounds = self.bounds;
     
-    NSRect progressBar = NSMakeRect(dirtyRect.origin.x + 10,
-                                    dirtyRect.origin.y + 10,
-                                    dirtyRect.size.width - 20,
-                                    dirtyRect.size.height - 20);
-    [[NSColor blueColor] set];
-    NSRectFill(progressBar);
+    // draw paper
     
-    [@"foobar" drawAtPoint:dirtyRect.origin withAttributes:[NSDictionary dictionary]];
-	
-    // Drawing code here.
+    [NSGraphicsContext saveGraphicsState];
+    
+    NSRect progressBar = NSMakeRect(MAX(1, bounds.origin.x + 5),
+                                    MAX(1, bounds.origin.y + 3),
+                                    MAX(1, bounds.size.width - 9),
+                                    MAX(1, bounds.size.height - 6));
+    
+    NSShadow *shad = [NSShadow new];
+    [shad setShadowOffset:NSMakeSize(0.f, -1.5f)];
+    [shad setShadowColor:[NSColor colorWithDeviceWhite:0.f alpha:0.2f]];
+    [shad setShadowBlurRadius:1.5f];
+    [shad set];
+    
+    NSBezierPath *surroundings = [NSBezierPath bezierPathWithRoundedRect:progressBar xRadius:1.0f yRadius:1.0f];
+    
+    [[NSColor whiteColor] set];
+    
+    [surroundings fill];
+    
+    [NSGraphicsContext restoreGraphicsState];
+    
+    // draw text
+    
+    [NSGraphicsContext saveGraphicsState];
+    
+    NSDictionary *dict = @{NSFontAttributeName: [NSFont fontWithName:@"Roboto" size:24.f]};
+    
+    NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"foo" attributes:dict];
+    
+    [str drawAtPoint:bounds.origin];
+    
+    [NSGraphicsContext restoreGraphicsState];
 }
 
 @end
