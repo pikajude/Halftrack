@@ -14,10 +14,10 @@
 {
     self = [super init];
     shipments = [NSMutableArray array];
-    [shipments addObject:[HTShipment new]];
-    [shipments addObject:[HTShipment new]];
-    [shipments addObject:[HTShipment new]];
-    [shipments addObject:[HTShipment new]];
+    [shipments addObject:[HTShipment shipmentWithTitle:@"Norse hoodie"]];
+    [shipments addObject:[HTShipment shipmentWithTitle:@"W+H shoes"]];
+    [shipments addObject:[HTShipment shipmentWithTitle:@"Keurig machine"]];
+    [shipments addObject:[HTShipment shipmentWithTitle:@"Flyknits"]];
     views = [NSMutableDictionary dictionary];
     return self;
 }

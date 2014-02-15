@@ -652,7 +652,8 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="300" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <value key="maxSize" type="size" width="300" height="10000"/>
+            <value key="minSize" type="size" width="240" height="200"/>
+            <value key="maxSize" type="size" width="360" height="10000"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="300" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>

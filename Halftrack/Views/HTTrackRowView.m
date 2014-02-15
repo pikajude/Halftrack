@@ -69,10 +69,10 @@
     [HTTrackRowView withPristineContext:^{
         NSDictionary *dict = @{NSFontAttributeName: [NSFont fontWithName:@"Roboto" size:24.f]};
         
-        NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"foo" attributes:dict];
+        NSAttributedString *str = [[NSAttributedString alloc] initWithString:shipment.title attributes:dict];
         
         NSAffineTransform *af = [[NSAffineTransform alloc] init];
-        [af translateXBy:5.f yBy:0.f];
+        [af translateXBy:8.f yBy:0.f];
         
         [str drawAtPoint:[af transformPoint:progressBar.origin]];
     }];

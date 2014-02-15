@@ -10,10 +10,11 @@
 
 @implementation HTShipment
 
-- (id)init {
-    self = [super init];
-    title = @"My title goes here.";
-    return self;
++ (HTShipment *)shipmentWithTitle:(NSString *)t
+{
+    HTShipment *ship = [HTShipment new];
+    ship.title = t;
+    return ship;
 }
 
 @end

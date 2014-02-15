@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HTShipment : NSObject {
-    NSString *title;
-}
+@interface HTShipment : NSObject
+
++ (HTShipment *)shipmentWithTitle:(NSString *)t;
+
+@property (retain) NSString *title;
 
 @end
